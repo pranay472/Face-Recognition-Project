@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    height:100%;
+}
+a, button{
+    cursor: pointer;
+}
+@keyframes pan {
+    100% {
+        background-position: 15% 50%;
+    }
+}
+body{
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 24px;
+    background-image: url("ag.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media(width>=500px){
+    body{
+        padding: 0;
+    }
+}
+.concard{
+    width: 100%;
+    padding: 40px 30px 44px;
+    border-radius: 24px;
+    background: #FFFDD0;
+    text-align: center;
+}
+@media(width>=500px){
+    .login-card{
+        margin: 0;
+        width: 400px;
+    }
+}
+.concard > h2 {
+    margin: 0 0 12px;
+    font-size: 36px;
+    font-weight: 600;
+}
+.concard > h3 {
+    margin:0 0 30px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0,0,0,38);
+}
+.signup{
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+}
+.signup > a{
+    color:#912582;
+}
+.signup > input, .signup > button {
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    border-radius: 8px;
+}
+.signup > input {
+    border: 2px solid #ebebeb;
+}
+.signup >button {
+    width: 100%;
+    height: 56px;
+    border: 0;
+    background: #ab22a4;
+    color: #f9f9f9;
+    font-weight: 600;
+    position: relative;
+    border-radius: 4px;
+}
